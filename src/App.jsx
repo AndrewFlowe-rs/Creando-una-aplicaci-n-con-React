@@ -1,3 +1,5 @@
+//import '../public/css/app.css';
+import sidebar from "./components/sidebar.jsx";
 import "./App.css";
 
 function App() {
@@ -5,70 +7,7 @@ function App() {
     <div id="wrapper">
       {/*page wraper*/}
 
-      {/* Sidebar*/}
-      <ul
-        class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion"
-        id="accordionSidebar"
-      >
-        {/* Sidebar - Brand*/}
-        <a
-          class="sidebar-brand d-flex align-items-center justify-content-center"
-          href="/"
-        >
-          <div class="sidebar-brand-icon">
-            <img
-              class="w-100"
-              src="assets/images/logo-DH.png"
-              alt="Digital House"
-            />
-          </div>
-        </a>
-
-        {/* Divider*/}
-        <hr class="sidebar-divider my-0" />
-
-        {/* Nav Item - Dashboard*/}
-        <li class="nav-item active">
-          <a class="nav-link" href="/">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard - DH movies</span>
-          </a>
-        </li>
-
-        {/* Divider*/}
-        <hr class="sidebar-divider" />
-
-        {/* Heading*/}
-        <div class="sidebar-heading">Actions</div>
-
-        {/* Nav Item - Pages*/}
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="/">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Pages</span>
-          </a>
-        </li>
-
-        {/* Nav Item - Charts*/}
-        <li class="nav-item">
-          <a class="nav-link" href="/">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span>
-          </a>
-        </li>
-
-        {/* Nav Item - Tables*/}
-        <li class="nav-item">
-          <a class="nav-link" href="/">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span>
-          </a>
-        </li>
-
-        {/* Divider*/}
-        <hr class="sidebar-divider d-none d-md-block" />
-      </ul>
-      {/* End of Sidebar*/}
+      <sidebar />
 
       {/* Content Wrapper*/}
       <div id="content-wrapper" class="d-flex flex-column">
@@ -220,7 +159,7 @@ function App() {
                     <div class="text-center">
                       <img
                         class="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                        style="width: 40rem;"
+                        style={{width: "40rem"}}
                         src="assets/images/mandalorian.jpg"
                         alt=" Star Wars - Mandalorian "
                       />
