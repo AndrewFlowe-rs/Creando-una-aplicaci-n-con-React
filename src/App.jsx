@@ -1,13 +1,14 @@
-//import '../public/css/app.css';
-import sidebar from "./components/sidebar.jsx";
+import React from "react";
+import {Sidebar} from "./components/sideBar";
 import "./App.css";
 
 function App() {
   return (
+    
     <div id="wrapper">
       {/*page wraper*/}
+      <Sidebar />
 
-      <sidebar />
 
       {/* Content Wrapper*/}
       <div id="content-wrapper" class="d-flex flex-column">
