@@ -1,6 +1,6 @@
 import React from "react";
 import { TopBar } from "./topBar";
-import { ContentRowTop } from "./contentRowTop"
+import { ContentRowTop } from "./ContentRowTop"
 import { Footer } from "./Footer";
 
 export const ContentWrapper = (props) => {
